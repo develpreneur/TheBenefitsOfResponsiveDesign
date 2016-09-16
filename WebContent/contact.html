@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Your Company Name</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+
+</head>
+<body>
+	<div id="top">
+		<div class="container-fluid">
+			<div class="row vcenter">
+				<img id="companylogo" src="./img/default-merchant-logo.png"
+					alt="logo">
+				<h1 id="companyName">Insert Company Name</h1>
+			</div>
+		</div>
+
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<!-- To set the current page link active add class="active" to the <li> tag-->
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./blog/index.html">Blog</a></li>
+					<li><a href="./about.html">About</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="middle" class="container-fluid left_margin">
+		<div class="row">
+			<h1>Email Contact Form</h1>
+		</div>
+		<div class="row">
+			<h3>Please enter your contact information:</h3>
+		</div>
+		<div class="row">
+			<form method="post" action="./php/echo.php">
+
+				<div id="section1" class="col-xs-6">
+					<div class="form-group">
+						<label for="firstname">First Name:</label> <input type="text"
+							class="form-control" id="firstname">
+					</div>
+					<div class="form-group">
+						<label for="lastname">Last Name:</label> <input type="text"
+							class="form-control" id="lastname">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label> <input
+							type="email" class="form-control" id="exampleInputEmail1"
+							aria-describedby="emailHelp" placeholder="Enter email"> 
+					</div>
+					<div class="form-group">
+						<label for="country">Country</label> <select class="form-control"
+							id="country">
+							<option value="US">United States</option>
+							<option value="UK">United Kingdom</option>
+							<option value="CA">Canada</option>
+							<option value="OT">Other</option>
+						</select>
+					</div>
+				</div>
+				<div id="section2" class="col-xs-6">
+					<fieldset class="form-group">
+						<legend>What is your gender?</legend>
+						<div class="form-check">
+							<label class="form-check-label"> <input type="radio"
+								name="gender" value="male" checked> Male
+							</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label"> <input type="radio"
+								name="gender" value="female"> Female
+							</label>
+						</div>
+						<div class="form-check">
+							<label class="form-check-label"> <input type="radio"
+								name="gender" value="other"> Other
+							</label>
+						</div>
+
+					</fieldset>
+					<div class="form-group">
+						<label for="message">Comments</label>
+						<textarea class="form-control" id="message" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="col-xs-12 text-center">
+					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="reset" class="btn btn-default">Clear Form</button>
+				</div>
+			</form>
+		</div>
+		<br />
+	</div>
+	<div id="bottom" class="text-center">
+		<ul class="list-inline ">
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./blog/index.html">Blog</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./contact.html">Contact Us</a></li>
+		</ul>
+		<p class="text-center">&copy; 2016 Insert Company Name</p>
+	</div>
+
+</body>
+</html>
